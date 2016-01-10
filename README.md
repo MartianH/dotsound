@@ -4,7 +4,10 @@ Simple application that reads, lists and plays mp3 songs by reading the ID3 tags
 See also: [Mutagen](https://mutagen.readthedocs.org/en/latest/)
 
 ##Instalaltion
-
+make music directory inside '/static' the name of the folder has to be 'music'
+```sh
+mkdir dotsound/static/music
+```
 Install dependeties:
 ```sh
 python setup.py install
