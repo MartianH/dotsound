@@ -17,7 +17,8 @@ Running the script is all that is required. app will default to *localhost:5000*
 python run.py
 ```
 ### Run globally
-For global access pass host and port argument in *setup.py*. [Read more here](http://flask.pocoo.org/docs/0.10/api/#application-globals)
+>For global access pass host and port argument in *setup.py*. [Read more here](http://flask.pocoo.org/docs/0.10/api/#application-globals)
+
 ```
 from dotsound import app
 if __name__ == '__main__':
@@ -25,6 +26,5 @@ if __name__ == '__main__':
 ```
 
 then run with root priviledge or as superuser
-> *Note: running flask with ports below 1024 requires root priviledges
 
 
