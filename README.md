@@ -7,8 +7,8 @@ Install dependeties:
 ```
 python setup.py install
 ```
-**Note:** It is always recommended to use *virtualenv* for a development setup. 
-*For more information:* [Flask with virtualenv](http://flask.pocoo.org/docs/0.10/installation/)
+>**Note:** It is always recommended to use *virtualenv* for a development setup. 
+For more information: [Flask with virtualenv](http://flask.pocoo.org/docs/0.10/installation/)
 
 ##Usage
 Running the script is all that is required. app will default to *localhost:5000*.
@@ -17,7 +17,7 @@ Running the script is all that is required. app will default to *localhost:5000*
 python run.py
 ```
 ### Run globally
->For global access pass host and port argument in *setup.py*. [Read more here](http://flask.pocoo.org/docs/0.10/api/#application-globals)
+For global access pass host and port argument in *setup.py*. [Read more here](http://flask.pocoo.org/docs/0.10/api/#application-globals)
 
 ```
 from dotsound import app
