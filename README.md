@@ -1,5 +1,7 @@
 # dotsound
-Simple web application that reads, lists and plays mp3 songs. Powered by [Flask](http://flask.pocoo.org/)
+Simple application that reads, lists and plays mp3 songs by reading the ID3 tags of each file. The application is build with [Flask](http://flask.pocoo.org/) and enabled client side with javascript (jquery).
+
+See also: [Mutagen](https://mutagen.readthedocs.org/en/latest/)
 
 ##Instalaltion
 
