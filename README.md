@@ -4,7 +4,7 @@ Simple web application that reads, lists and plays mp3 songs. Powered by [Flask]
 ##Instalaltion
 
 Install dependeties:
-```
+```sh
 python setup.py install
 ```
 >**Note:** It is always recommended to use *virtualenv* for a development setup. 
@@ -13,17 +13,17 @@ For more information: [Flask with virtualenv](http://flask.pocoo.org/docs/0.10/i
 ##Usage
 Running the script is all that is required. app will default to *localhost:5000*.
 
-```
+```sh
 python run.py
 ```
 ### Run globally
 For global access pass host and port argument in *setup.py*. [Read more here](http://flask.pocoo.org/docs/0.10/api/#application-globals)
 
-
+```python
     from dotsound import app
         if __name__ == '__main__':
         app.run('0.0.0.0', port=80)
-
+```
 
 then run with root priviledge or as superuser
 
