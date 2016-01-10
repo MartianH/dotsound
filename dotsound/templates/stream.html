@@ -1,0 +1,10 @@
+{% extends "blank.html" %}
+{% block content %}
+	<section id="artist-wrap">
+	<ul id="artist-list">
+		{% for i in range(artist_index) %}
+				<a href="{{ url_for('artist', artist=artists[i]) }}"><li>{{ artists[i] }}</li></a>
+		{% endfor %}
+	</ul>
+	</section>
+{% endblock %}

@@ -1,0 +1,30 @@
+#wrap {
+  margin-top: 2.3em;
+  width : 45%;
+  float: left;
+}
+
+#wrap h1, #wrap h4 {
+  text-align : center;
+}
+
+#wrap h4 {
+  position : relative;
+  bottom : 3em;
+}
+
+#c {
+  display : block;
+  float: none;
+  margin:0em;
+}
+
+#a {
+  margin : 0 0 1em -.5em;
+}
+
+#audio-visual {
+  position : relative;
+  width : 100%;
+  margin : 0 auto;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head lang="en">
+	<title>.Sound || Chill Hop - {{ title }}</title>
+	<link rel="icon" href="../static/img/favi.png" type="image/png" sizes="15x15">
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<meta name="description" content="Chill Hop playlist straight from the underground.">
+	<meta name="keywords" content="dotSound, Chill, Instrumentals, Hip-Hop, Down-fo-whatever">
+	<link rel="stylesheet" type="text/css" href="../static/stijl.css?id=1234">
+	<link rel="stylesheet" type="text/css" href="../static/visualizer.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<h1 class="header-title"><a href="/">.Sound</a></h1>
+		<div id="wrap">
+	  	 	 <div id="audio-visual">
+	        		<canvas id="c" width="1200" height="60"></canvas>
+             </div>
+		</div>
+	<nav>
+	</nav>
+	</header>
+
+	<div id="content-wrapper">
+        <article>
+			<section>
+                {% block content %}
+
+                {% endblock %}
+			</section>
+	    </article>
+	
+		
+		<p class="footnote">H. Martial | .Sound-Server</p>
+	</div>	
+
+	<script type="text/javascript" src="../static/player.js"></script>
+	<!--<script type="text/javascript" src="../static/scripts/sound.js"></script>-->
+	<!--<script type="text/javascript" src="../static/scripts/visualizer.js"></script>-->
+</body>
+</html>

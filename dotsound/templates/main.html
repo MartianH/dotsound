@@ -1,0 +1,14 @@
+{% extends "player.html" %}
+{% block player %}
+    {% for i in range(0, s) %}
+        <a href="{{ songs[i][5].decode('utf-8') }}">
+        <tr>
+            <td>{{ songs[i][0] }}</td>
+            <td class="title">{{ songs[i][1].decode('utf-8') }}</td>
+            <td class="artist">{{ songs[i][2].decode('utf-8') }}</td>
+            <td class="album">{{ songs[i][3].decode('utf-8') }}</td>
+            <td>{{ songs[i][4] }}</td>
+        </tr>
+        </a>
+    {% endfor %}
+{% endblock %}

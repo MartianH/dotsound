@@ -1,0 +1,528 @@
+/*
+Martial Habimana 
+_________________
+.sound stylesheet
+_________________
+======
+Colors
+======
+Dark Grey: #454545
+Main Orange: #FF9900
+Border Orange:#FFA319
+
+*/
+@import url(http://fonts.googleapis.com/css?family=Jura:400,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+@media all and (min-width:1200px){
+
+body
+{
+	margin:0;
+	padding:0;
+	color:white;
+	font-family: 'Jura', sans-serif;
+	font-size: 11px;
+	background-color:#000;
+	background-image: url(img/BGmusic.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+		
+}
+::selection {background-color:#FFA319;}
+.header-title{float: left; margin-bottom:-0.12em; margin-right:0.1em;}
+header
+{
+	margin-top: -9.5em;
+	margin-bottom: 3.5em;
+	width: 100%;
+	background-color: #ff8400;
+	height:7.8em;
+	position: fixed;
+	z-index: 1;
+}
+	header h1
+	{
+		font-size:5em;
+		text-align: left;
+		line-height:100%;
+	}
+	header h1 a{
+		color:#0d0d0d;
+		text-decoration: none;
+		-o-transition:500ms ease all;
+		-moz-transition:500ms ease all;
+		-webkit-transition:500ms ease all;
+		transition:500ms ease all;
+	}
+	header h1 a:hover
+ 	{
+		opacity:1.0;
+		text-shadow:-1px -1px 0 #0d0d0d, 1px -1px 0 #0d0d0d, -1px 1px 0 #0d0d0d,1px 1px 0 #0d0d0d; 
+ 	}
+#test{display:none;}
+#set-artist, #set-title{color:#ff8400;}
+#set-artist2{color:#ff8400;}
+#set-title2{line-height:1em;}
+nav{
+	background-color: #0d0d0d;
+	text-align: left;
+	margin-top: -2.64em;
+	padding-bottom: 0.35em;
+	border-bottom:solid 0.091em #FF9900;
+	font-size: 0.9em;
+	height: 1.1em;
+	clear:both;
+}
+	nav a 
+	{
+		font-weight: 200;
+		padding: 0.1em;
+		border: none;
+		text-decoration: none;
+		color: #FF9900;
+		transition: ease 600ms;
+		-webkit-transition: ease 600ms;
+		-moz-transition: ease 600ms;
+		-o-transition: ease 600ms;
+	}
+		nav a:hover
+		{
+			border-radius: 0.182em;
+			padding-left:1.818em;
+			border:none;
+			color: black;
+			background-color:#ff8400;
+			width:27.273em;
+			opacity: 1.0;
+		}
+		nav a::before{content: " • ";}
+	nav li{
+		list-style-type: none; 
+		display: inline;
+		padding-right: 0.5em;
+	}
+
+table{width:99%; margin:auto;}
+table img{height : 2em;}
+table h2{font-size:1.5em; line-height:0em;}
+tr{cursor:pointer; transition:100ms ease all;}
+tr:hover{color:orange !important; }
+.heading{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.heading:hover{color:inherit; background-color:transparent; cursor: auto;}
+td {padding-right:0em; font-size:1.6em; }
+p, li{font-size:1.5em; text-align: left;}
+li {list-style-type: none;}
+article
+{
+	min-height:13.636em;
+	margin-bottom:0.4em;
+	
+	padding:0.709em;
+}
+section
+{
+	margin-bottom:1em;
+	border-bottom:dotted 0.18em #FFA319;
+}
+h1{
+    text-align: center;
+	font-size:3em;
+	color:#FF9900;
+	font-family: Roboto, "Arial Black", Gadget, sans-serif;
+    text-transform: uppercase;
+}
+h2
+{
+    text-align: center;
+	color:#FF9900;
+	font-size:3.636em;
+	font-family: 'Jura', sans-serif;
+	text-transform: uppercase;
+}
+h3
+{
+	color:#FF9900;
+	font-size:2em;
+	font-family: 'Jura', sans-serif;
+}
+#artist-wrapp{
+
+}
+#artist-list{
+	height: 20em;
+	color:#FF9900;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+#artist-list li{
+	font-size:1.3em;
+	list-style-type: none;
+	text-align: left;
+	padding:0em;
+	transition: 500ms ease all;
+	-webkit-transition: 500ms ease all;
+	-moz-transition: 500ms ease all;
+}
+#artist-list li:hover{
+	border-radius: 0.182em;
+	padding-left: 0.818em;
+	border: none;
+	color: black;
+	background-color: #ff8400;
+	width: 10em;
+	opacity: 1.0;
+}
+#artist-list a{
+	color: inherit;
+	text-decoration: none;
+}
+
+#play{padding: 0.1em; height:auto;}
+#play h2{text-align: center;  font-size:3em;}
+.cover{}
+.cover img{
+	padding:0.3em;
+	border-radius: 0.2em;
+	height:20.65em;
+	width:20.65em;
+}
+.metadata{
+	padding-right:1.5em;
+	margin-right: 1em;
+}
+
+#status{
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.indexBG{background-size: cover;}
+.head{color:#FFF;}
+.profile{float:left; padding-right:0.455em; }
+.info{
+	text-align: center;
+	line-height:0.3em;
+	color:white;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+.controls, .re{
+	cursor:pointer;
+	font-size: 0.7em;
+	line-height:0.3em;
+	color:white;
+	font-family:"Arial Black", Gadget, sans-serif;
+	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    	-khtml-user-select: none;
+    	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+}
+
+.about{margin-left:auto; margin-right:auto; margin-top:4em; text-align: center;}
+	.about img{border-radius:10em;}
+	.about li{list-style-type: none;}
+
+
+a{
+	font-weight: bold;
+	color:#FF9900;
+	text-decoration: none;
+	-o-transition:500ms ease all;
+	-moz-transition:500ms ease all;
+	-webkit-transition:500ms ease all;
+	transition:500ms ease all;
+}
+	a:hover
+ 	{
+ 		opacity: 0.8;
+ 	}
+
+.footnote
+{
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+
+/*
+---
+WRAPPERS
+---
+*/
+
+#content-wrapper
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:109.091em;
+	margin-bottom:0.818em;
+	margin-top: 7.5em;
+}
+
+}
+
+@media all and (max-width:1200px){
+	
+body
+{
+	margin:0;
+	padding:0;
+	color:white;
+	font-family: 'Jura', sans-serif;
+	font-size: 11px;
+	background-color:#000;
+	background-image: url(img/BGmusic.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+		
+}
+::selection {background-color:#FFA319;}
+.header-title{float: left; margin-bottom:-0.12em; margin-right:0.1em;}
+header
+{
+	margin-top: -9.5em;
+	margin-bottom: 3.5em;
+	width: 100%;
+	background-color: #ff8400;
+	height:7.8em;
+	position: fixed;
+}
+	header h1
+	{
+		font-size:5em;
+		text-align: left;
+		line-height:100%;
+	}
+	header h1 a{
+		color:#0d0d0d;
+		text-decoration: none;
+		-o-transition:500ms ease all;
+		-moz-transition:500ms ease all;
+		-webkit-transition:500ms ease all;
+		transition:500ms ease all;
+	}
+	header h1 a:hover
+ 	{
+		opacity:1.0;
+		text-shadow:-1px -1px 0 #0d0d0d, 1px -1px 0 #0d0d0d, -1px 1px 0 #0d0d0d,1px 1px 0 #0d0d0d; 
+ 	}
+#test{display:none;}
+#set-artist, #set-title{color:#ff8400;}
+#set-artist2{color:#ff8400;}
+#set-title2{line-height:1em;}
+nav{
+	background-color:#0d0d0d;
+	text-align: center;
+	margin-top: -2.64em;
+	border-bottom:solid 0.091em #FF9900;
+	font-size: 1.455em;
+	height: 1.3em;
+	clear:both;
+}
+	nav a 
+	{
+		font-weight: 200;
+		padding: 0.1em;
+		border: none;
+		text-decoration: none;
+		color: #FF9900;
+		transition: ease 600ms;
+		-webkit-transition: ease 600ms;
+		-moz-transition: ease 600ms;
+		-o-transition: ease 600ms;
+	}
+		nav a:hover
+		{
+			border-radius: 0.182em;
+			padding-left:1.818em;
+			border:none;
+			color: black;
+			background-color:#ff8400;
+			width:27.273em;
+			opacity: 1.0;
+		}
+		nav a::after{content: " • ";}
+	nav li{
+		list-style-type: none; 
+		display: inline;
+		padding-right: 0.5em;
+	}
+
+table{width:99%; margin:auto;}
+table img{height : 2em;}
+table h2{font-size:1.5em; line-height:0em;}
+tr{cursor:pointer; transition:100ms ease all;}
+tr:hover{color:orange !important; }
+.heading{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.heading:hover{color:inherit; background-color:transparent; cursor: auto;}
+td {padding-right:0em; font-size:1.6em; }
+p, li{font-size:1.1em}
+article
+{
+	min-height:13.636em;
+	margin-bottom:0.4em;
+	
+	padding:0.709em;
+}
+section
+{
+	margin-bottom:1em;
+	border-bottom:dotted 0.18em #FFA319;
+}
+h1{
+    text-align: center;
+	font-size:12.364em;
+	color:#000;
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-transform: uppercase;
+}
+h2
+{
+	text-align: center;
+	color:#FF9900;
+	font-size:3.636em;
+	font-family: 'Jura', sans-serif;
+	text-transform: uppercase;
+}
+h3
+{
+	text-align: center;
+	color:#FF9900;
+	font-size:2em;
+	font-family: 'Jura', sans-serif;
+}
+
+#artist-list{color:#FF9900;}
+#artist-list li{
+	font-size:1.3em;
+	list-style-type: none;
+	text-align: left;
+	padding:0em;
+	transition: 500ms ease all;
+	-webkit-transition: 500ms ease all;
+	-moz-transition: 500ms ease all;
+}
+#artist-list li:hover{
+	border-radius: 0.182em;
+	padding-left:0.818em;
+	border:none;
+	color: black;
+	background-color:#ff8400;
+	width:10em;
+	opacity: 1.0;
+}
+#artist-list a{
+	color: inherit;
+	text-decoration: none;
+}
+
+#play{padding: 0.1em; height:auto;}
+#play h2{text-align: center;  font-size:3em;}
+.cover{}
+.cover img{
+	padding:0.3em;
+	border-radius: 0.2em;
+	height:20.65em;
+	width:20.65em;
+}
+.metadata{
+	padding-right:1.5em;
+	margin-right: 1em;
+}
+
+#status{
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.indexBG{background-size: cover;}
+.head{color:#FFF;}
+.profile{float:left; padding-right:0.455em; }
+.info{
+	text-align: center;
+	line-height:0.3em;
+	color:white;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+.controls, .re{
+	cursor:pointer;
+	font-size: 0.7em;
+	line-height:0.3em;
+	color:white;
+	font-family:"Arial Black", Gadget, sans-serif;
+	-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    	-khtml-user-select: none;
+    	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+}
+
+.about{margin-left:auto; margin-right:auto; margin-top:4em; text-align: center;}
+	.about img{border-radius:10em;}
+	.about li{list-style-type: none;}
+
+
+a{
+	font-weight: bold;
+	color:#FF9900;
+	text-decoration: none;
+	-o-transition:500ms ease all;
+	-moz-transition:500ms ease all;
+	-webkit-transition:500ms ease all;
+	transition:500ms ease all;
+}
+	a:hover
+ 	{
+ 		opacity: 0.8;
+ 	}
+
+.footnote
+{
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+
+/*
+---
+WRAPPERS
+---
+*/
+
+#content-wrapper
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:auto;
+	margin-bottom:0.818em;
+	margin-top: 7.5em;
+}
+
+}
+

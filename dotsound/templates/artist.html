@@ -1,0 +1,18 @@
+{% extends "player.html" %}
+{% block player %}
+    {% for i in range(mp3_list_index) %}
+        {% if MP3(music_dir+mp3_list[i].decode('utf-8')) %}
+            {% if artist in MP3(music_dir+mp3_list[i])['TPE1'] %}
+                <a href="{{ "../static/music/"+mp3_list[i].decode('utf-8') }}">
+                <tr>
+                    <td>{{ "{0:0>2}".format(MP3(music_dir+mp3_list[i])['TRCK']).decode('utf-8') }}</td>
+                    <td class="title">{{ "{0}".format(MP3(music_dir+mp3_list[i])['TIT2']).decode('utf-8') }}</td>
+                    <td class="artist">{{ "{0:0>2}".format(MP3(music_dir+mp3_list[i])['TPE1']).decode('utf-8') }}</td>
+                    <td class="album">{{ "{0}".format(MP3(music_dir+mp3_list[i])['TALB']).decode('utf-8') }}</td>
+                    <td>{{ "{0}".format(track_length(MP3(music_dir+mp3_list[i]).info.length)) }}</td>
+                </tr>
+                </a>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endblock %}

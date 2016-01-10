@@ -1,0 +1,6 @@
+{% extends "blank.html" %}
+    {% block content %}
+        <h1>{{ err_title }}</h1>
+        <p>{{ err_desc }}</p>
+        <p>{{ err_misc | safe }}</p>
+{% endblock %}
