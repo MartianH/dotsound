@@ -9,8 +9,11 @@ from operator import itemgetter
 import os
 import sys
 
-
 music_dir = "{0}/dotsound/static/music/".format(os.getcwd())
+
+if not os.path.exists(music_dir): #You have to be root to do this
+    os.makedirs(music_dir)
+
 ls_dir = os.listdir(music_dir)
 mp3_list = [files for files in ls_dir if files.endswith(".mp3")]
 mp3_list.sort()
