@@ -1,7 +1,9 @@
 # dotsound
-Simple application that reads, lists and plays mp3 songs by reading the ID3 tags of each file. The application is build with [Flask](http://flask.pocoo.org/) and enabled client side with javascript (jquery).
+![tag in-use screenshot](http://i.imgur.com/tQtP2TW.png)
 
-See also: [Mutagen](https://mutagen.readthedocs.org/en/latest/)
+Simple application that serves as a web mp3 player. The application is build with [Flask](http://flask.pocoo.org/) and enabled client side with javascript (jquery).
+
+The project was initialy a python script that read ID3 tags using [Mutagen](https://mutagen.readthedocs.org/en/latest/).
 
 ##Instalaltion
 make music directory inside '/static' the name of the folder has to be 'music'
